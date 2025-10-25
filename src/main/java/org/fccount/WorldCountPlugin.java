@@ -20,7 +20,7 @@ import java.util.Map;
 @PluginDescriptor(
         name = "FC World Populations",
         description = "Counts FC members per world and shows top 3 popular worlds.",
-        tags = {"fc", "friendschat", "world", "counter", "population"}
+        tags = {"fc", "friend", "chat", "world", "count", "population"}
 )
 @Slf4j
 public class WorldCountPlugin extends Plugin
