@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.Client;
 import net.runelite.api.FriendsChatManager;
 import net.runelite.api.FriendsChatMember;
-import net.runelite.api.events.FriendsChatChanged;
+import net.runelite.api.events.FriendsChatSync;
 import net.runelite.api.events.FriendsChatMemberJoined;
 import net.runelite.api.events.FriendsChatMemberLeft;
 import net.runelite.api.events.GameTick;
@@ -56,7 +56,7 @@ public class WorldCountPlugin extends Plugin
     }
 
     @Subscribe
-    public void onFriendsChatChanged(FriendsChatChanged event)
+    public void onFriendsChatSync(FriendsChatSync event)
     {
         clientThread.invokeLater(this::updateCounts);
     }
